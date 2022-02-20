@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wallet_address: MyString
+  link_to_nft_image: MyString
+  customer_id: MyString
+
+two:
+  wallet_address: MyString
+  link_to_nft_image: MyString
+  customer_id: MyString

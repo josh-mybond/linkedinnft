@@ -1,0 +1,22 @@
+<div id="<%= dom_id customer %>">
+  <p>
+    <strong>Name:</strong>
+    <%= customer.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= customer.email %>
+  </p>
+
+  <p>
+    <strong>Linkedin profile url:</strong>
+    <%= customer.linkedin_profile_url %>
+  </p>
+
+  <p>
+    <strong>Linkedin profile image:</strong>
+    <%= link_to customer.linkedin_profile_image.filename, customer.linkedin_profile_image if customer.linkedin_profile_image.attached? %>
+  </p>
+
+</div>

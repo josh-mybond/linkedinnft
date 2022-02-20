@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @nft %>
+
+<div>
+  <%= link_to "Edit this nft", edit_nft_path(@nft) %> |
+  <%= link_to "Back to nfts", nfts_path %>
+
+  <%= button_to "Destroy this nft", @nft, method: :delete %>
+</div>

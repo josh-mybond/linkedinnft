@@ -1,0 +1,32 @@
+<%= form_with(model: nft) do |form| %>
+  <% if nft.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(nft.errors.count, "error") %> prohibited this nft from being saved:</h2>
+
+      <ul>
+        <% nft.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :wallet_address, style: "display: block" %>
+    <%= form.text_field :wallet_address %>
+  </div>
+
+  <div>
+    <%= form.label :link_to_nft_image, style: "display: block" %>
+    <%= form.text_field :link_to_nft_image %>
+  </div>
+
+  <div>
+    <%= form.label :customer_id, style: "display: block" %>
+    <%= form.text_field :customer_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

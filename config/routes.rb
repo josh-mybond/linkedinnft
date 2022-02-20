@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "customers#index"
+  get '/all_customers', to: 'customers#all_customers'
 end

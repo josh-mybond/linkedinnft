@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<div id="nfts">
+  <% @customers.each do |customer| %>
+    <%= render customer %>
+    <p>
+      <%= link_to "Show this Customer", customer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Customer", new_customer_path %>

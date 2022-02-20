@@ -72,6 +72,9 @@ class CustomersController < ApplicationController
     @customer = Customer.new
   end
 
+  def all_customers
+    @customers = Customer.all
+  end
   # GET /customers/1 or /customers/1.json
   def show
   end

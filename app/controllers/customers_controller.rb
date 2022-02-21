@@ -1,3 +1,5 @@
+require 'json'
+require 'stripe'
 class CustomersController < ApplicationController
   before_action :set_customer, only: %i[ show edit update destroy ]
   skip_before_action :verify_authenticity_token, only: [ :webhook, :create ]

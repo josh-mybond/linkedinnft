@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "customers#index"
   get '/all_customers', to: 'customers#all_customers'
-  post 'webhook', to: "indices#webhook"
+  post 'webhooks', to: "customers#webhook"
 end
